@@ -1,0 +1,21 @@
+{
+  "name": "wulfcode",
+  "version": "1.0.0",
+  "description": "wulfcode homepage",
+  "author": "Sean Prasertsit <sean@wulfcode.com>",
+  "scripts": {
+    "test": "mocha",
+    "start": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wulfcode/wulfcode"
+  },
+  "bugs": {
+    "url": "https://github.com/wulfcode/wulfcode/issues"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "private": true
+}

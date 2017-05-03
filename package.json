@@ -5,8 +5,10 @@
   "author": "Sean Prasertsit <sean@wulfcode.com>",
   "scripts": {
     "test": "mocha",
+    "build": "yarn run css",
     "start": "NODE_ENV=production node app.js",
-    "css": "stylus -w src/stylesheets/app.styl -o dist/app.css"
+    "css-watch": "stylus -u autoprefixer-stylus -w src/stylesheets/app.styl -o dist/app.css",
+    "css": "stylus -c -u autoprefixer-stylus src/stylesheets/app.styl -o dist/app.css"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,7 @@
     "url": "https://github.com/wulfcode/wulfcode/issues"
   },
   "dependencies": {
+    "autoprefixer-stylus": "^0.13.0",
     "express": "^4.15.2",
     "pug": "^2.0.0-rc.1",
     "stylus": "^0.54.5"

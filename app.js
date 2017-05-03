@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, '/templates'));
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-  const quoteObj = utils.randomElement(quotes.quotes);
+  const quoteObj = utils.randomElement(quotes.homepage);
   const key = Object.keys(quoteObj)[0];
   res.render('index', {
     quote: quoteObj[key],

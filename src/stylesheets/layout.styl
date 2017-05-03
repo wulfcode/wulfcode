@@ -1,6 +1,23 @@
 @require 'colors.styl'
 
-html, body
-  min-height: 100%;
+html
+  height 100%
 body
   background-color $pink200
+  min-height 100%
+  display flex
+  flex-direction column
+.main
+  display flex
+  align-items center
+  justify-content center
+  flex 1
+.footer
+  padding 10px 0
+.quote-block
+  max-width: 900px;
+  &__quote
+    font-size 2rem
+    text-transform: uppercase;
+  &__author
+    font-size 1.2rem

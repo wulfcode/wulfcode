@@ -5,5 +5,11 @@ html
     link(href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css' rel='stylesheet')
     link(href='app.css' rel='stylesheet')
   body
-    h1= quote
-    h2 - #{author}
+    include header.pug
+    main.main
+      .content
+        section.hero
+          .quote-block.text-center
+            p.quote-block__quote= quote
+            p.quote-block__author - #{author}
+    include footer.pug

@@ -4,6 +4,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, '/templates'));
+app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!' })
